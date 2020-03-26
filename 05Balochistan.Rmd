@@ -1,0 +1,106 @@
+---
+title: "Coronavirus"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+ #    vertical_layout: scroll
+  #  vertical_layout: fill
+---
+
+
+```{r label = Balochistan, include = FALSE}
+knitr::read_chunk("05Balochistan.R")
+```
+
+
+```{r label = BalochistanPackages, include = FALSE}
+```
+
+```{r label = BalochistanParameters}
+```
+
+
+```{r label = BalochistanCoronaData}
+```
+
+Balochistan
+======================================================================
+
+Row
+----------------------------------------------------------------------
+  
+### Confirmed {.value-box}
+```{r label = BalochistanConfirmed}
+```
+
+### Active {.value-box}
+```{r label = BalochistanActive}
+```
+
+### Recovered {.value-box}
+```{r label = BalochistanRecovered}
+```
+
+
+### Death {.value-box}
+```{r label = BalochistanDeaths}
+```
+
+
+Row
+----------------------------------------------------------------------
+
+### Cumulative Number of Confirmed Cases
+```{r label = BalochistanConfirmedPlot1}
+```
+
+### Cumulative Number of Active Cases
+```{r label = BalochistanActivePlot1}
+```
+
+
+### Number of New Cases
+```{r label = BalochistanNewPlot1}
+```
+
+
+Balochistan
+======================================================================
+
+Row
+----------------------------------------------------------------------
+  
+### Confirmed {.value-box}
+```{r label = BalochistanConfirmed}
+```
+
+### Active {.value-box}
+```{r label = BalochistanActive}
+```
+
+### Recovered {.value-box}
+```{r label = BalochistanRecovered}
+```
+
+
+### Death {.value-box}
+```{r label = BalochistanDeaths}
+```
+
+
+Row
+----------------------------------------------------------------------
+
+### Number of Recovered Cases
+```{r label = BalochistanRecoveredPlot1}
+```
+
+
+### Number of Deaths
+```{r label = BalochistanDeathsPlot1}
+```
+
+### Data for COVID-19
+```{r label = BalochistanCoronaData1}
+```
+

@@ -1,0 +1,106 @@
+---
+title: "Coronavirus"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+ #    vertical_layout: scroll
+  #  vertical_layout: fill
+---
+
+
+```{r label = GB, include = FALSE}
+knitr::read_chunk("07GB.R")
+```
+
+
+```{r label = GBPackages, include = FALSE}
+```
+
+```{r label = GBParameters}
+```
+
+
+```{r label = GBCoronaData}
+```
+
+GB
+======================================================================
+
+Row
+----------------------------------------------------------------------
+  
+### Confirmed {.value-box}
+```{r label = GBConfirmed}
+```
+
+### Active {.value-box}
+```{r label = GBActive}
+```
+
+### Recovered {.value-box}
+```{r label = GBRecovered}
+```
+
+
+### Death {.value-box}
+```{r label = GBDeaths}
+```
+
+
+Row
+----------------------------------------------------------------------
+
+### Cumulative Number of Confirmed Cases
+```{r label = GBConfirmedPlot1}
+```
+
+### Cumulative Number of Active Cases
+```{r label = GBActivePlot1}
+```
+
+
+### Number of New Cases
+```{r label = GBNewPlot1}
+```
+
+
+GB
+======================================================================
+
+Row
+----------------------------------------------------------------------
+  
+### Confirmed {.value-box}
+```{r label = GBConfirmed}
+```
+
+### Active {.value-box}
+```{r label = GBActive}
+```
+
+### Recovered {.value-box}
+```{r label = GBRecovered}
+```
+
+
+### Death {.value-box}
+```{r label = GBDeaths}
+```
+
+
+Row
+----------------------------------------------------------------------
+
+### Number of Recovered Cases
+```{r label = GBRecoveredPlot1}
+```
+
+
+### Number of Deaths
+```{r label = GBDeathsPlot1}
+```
+
+### Data for COVID-19
+```{r label = GBCoronaData1}
+```
+

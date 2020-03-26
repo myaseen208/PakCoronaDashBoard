@@ -1,0 +1,106 @@
+---
+title: "Coronavirus"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+ #    vertical_layout: scroll
+  #  vertical_layout: fill
+---
+
+
+```{r label = AJK, include = FALSE}
+knitr::read_chunk("08AJK.R")
+```
+
+
+```{r label = AJKPackages, include = FALSE}
+```
+
+```{r label = AJKParameters}
+```
+
+
+```{r label = AJKCoronaData}
+```
+
+AJK
+======================================================================
+
+Row
+----------------------------------------------------------------------
+  
+### Confirmed {.value-box}
+```{r label = AJKConfirmed}
+```
+
+### Active {.value-box}
+```{r label = AJKActive}
+```
+
+### Recovered {.value-box}
+```{r label = AJKRecovered}
+```
+
+
+### Death {.value-box}
+```{r label = AJKDeaths}
+```
+
+
+Row
+----------------------------------------------------------------------
+
+### Cumulative Number of Confirmed Cases
+```{r label = AJKConfirmedPlot1}
+```
+
+### Cumulative Number of Active Cases
+```{r label = AJKActivePlot1}
+```
+
+
+### Number of New Cases
+```{r label = AJKNewPlot1}
+```
+
+
+AJK
+======================================================================
+
+Row
+----------------------------------------------------------------------
+  
+### Confirmed {.value-box}
+```{r label = AJKConfirmed}
+```
+
+### Active {.value-box}
+```{r label = AJKActive}
+```
+
+### Recovered {.value-box}
+```{r label = AJKRecovered}
+```
+
+
+### Death {.value-box}
+```{r label = AJKDeaths}
+```
+
+
+Row
+----------------------------------------------------------------------
+
+### Number of Recovered Cases
+```{r label = AJKRecoveredPlot1}
+```
+
+
+### Number of Deaths
+```{r label = AJKDeathsPlot1}
+```
+
+### Data for COVID-19
+```{r label = AJKCoronaData1}
+```
+

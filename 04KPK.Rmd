@@ -1,0 +1,106 @@
+---
+title: "Coronavirus"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+ #    vertical_layout: scroll
+  #  vertical_layout: fill
+---
+
+
+```{r label = KPK, include = FALSE}
+knitr::read_chunk("04KPK.R")
+```
+
+
+```{r label = KPKPackages, include = FALSE}
+```
+
+```{r label = KPKParameters}
+```
+
+
+```{r label = KPKCoronaData}
+```
+
+KPK
+======================================================================
+
+Row
+----------------------------------------------------------------------
+  
+### Confirmed {.value-box}
+```{r label = KPKConfirmed}
+```
+
+### Active {.value-box}
+```{r label = KPKActive}
+```
+
+### Recovered {.value-box}
+```{r label = KPKRecovered}
+```
+
+
+### Death {.value-box}
+```{r label = KPKDeaths}
+```
+
+
+Row
+----------------------------------------------------------------------
+
+### Cumulative Number of Confirmed Cases
+```{r label = KPKConfirmedPlot1}
+```
+
+### Cumulative Number of Active Cases
+```{r label = KPKActivePlot1}
+```
+
+
+### Number of New Cases
+```{r label = KPKNewPlot1}
+```
+
+
+KPK
+======================================================================
+
+Row
+----------------------------------------------------------------------
+  
+### Confirmed {.value-box}
+```{r label = KPKConfirmed}
+```
+
+### Active {.value-box}
+```{r label = KPKActive}
+```
+
+### Recovered {.value-box}
+```{r label = KPKRecovered}
+```
+
+
+### Death {.value-box}
+```{r label = KPKDeaths}
+```
+
+
+Row
+----------------------------------------------------------------------
+
+### Number of Recovered Cases
+```{r label = KPKRecoveredPlot1}
+```
+
+
+### Number of Deaths
+```{r label = KPKDeathsPlot1}
+```
+
+### Data for COVID-19
+```{r label = KPKCoronaData1}
+```
+

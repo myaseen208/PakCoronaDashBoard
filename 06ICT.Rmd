@@ -1,0 +1,106 @@
+---
+title: "Coronavirus"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+ #    vertical_layout: scroll
+  #  vertical_layout: fill
+---
+
+
+```{r label = ICT, include = FALSE}
+knitr::read_chunk("06ICT.R")
+```
+
+
+```{r label = ICTPackages, include = FALSE}
+```
+
+```{r label = ICTParameters}
+```
+
+
+```{r label = ICTCoronaData}
+```
+
+ICT
+======================================================================
+
+Row
+----------------------------------------------------------------------
+  
+### Confirmed {.value-box}
+```{r label = ICTConfirmed}
+```
+
+### Active {.value-box}
+```{r label = ICTActive}
+```
+
+### Recovered {.value-box}
+```{r label = ICTRecovered}
+```
+
+
+### Death {.value-box}
+```{r label = ICTDeaths}
+```
+
+
+Row
+----------------------------------------------------------------------
+
+### Cumulative Number of Confirmed Cases
+```{r label = ICTConfirmedPlot1}
+```
+
+### Cumulative Number of Active Cases
+```{r label = ICTActivePlot1}
+```
+
+
+### Number of New Cases
+```{r label = ICTNewPlot1}
+```
+
+
+ICT
+======================================================================
+
+Row
+----------------------------------------------------------------------
+  
+### Confirmed {.value-box}
+```{r label = ICTConfirmed}
+```
+
+### Active {.value-box}
+```{r label = ICTActive}
+```
+
+### Recovered {.value-box}
+```{r label = ICTRecovered}
+```
+
+
+### Death {.value-box}
+```{r label = ICTDeaths}
+```
+
+
+Row
+----------------------------------------------------------------------
+
+### Number of Recovered Cases
+```{r label = ICTRecoveredPlot1}
+```
+
+
+### Number of Deaths
+```{r label = ICTDeathsPlot1}
+```
+
+### Data for COVID-19
+```{r label = ICTCoronaData1}
+```
+

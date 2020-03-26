@@ -7,322 +7,36 @@ output:
   #  vertical_layout: fill
 ---
 
-
-```{r label = RCode, include = FALSE}
-knitr::read_chunk("RCode.R")
+```{r, child = c("01Pakistan.Rmd")}
 ```
 
 
-```{r label = Packages, include = FALSE}
-```
-
-```{r label = Parameters}
+```{r, child = c("02Punjab.Rmd")}
 ```
 
 
-```{r label = PakCoronaData}
-```
-
-Pakistan
-======================================================================
-
-Row
-----------------------------------------------------------------------
-  
-### Confirmed {.value-box}
-```{r label = PakConfirmed}
-```
-
-### Active {.value-box}
-```{r label = PakActive}
-```
-
-### Recovered {.value-box}
-```{r label = PakRecovered}
+```{r, child = c("03Sindh.Rmd")}
 ```
 
 
-### Death {.value-box}
-```{r label = PakDeaths}
+```{r, child = c("04KPK.Rmd")}
+```
+
+```{r, child = c("05Balochistan.Rmd")}
 ```
 
 
-Row
-----------------------------------------------------------------------
-
-### Cumulative Number of Confirmed Cases
-```{r label = PakConfirmedPlot1}
-```
-
-### Cumulative Number of Active Cases
-```{r label = PakActivePlot1}
+```{r, child = c("06ICT.Rmd")}
 ```
 
 
-### Number of New Cases
-```{r label = PakNewPlot1}
+```{r, child = c("07GB.Rmd")}
 ```
 
 
-Pakistan
-======================================================================
-
-Row
-----------------------------------------------------------------------
-  
-### Confirmed {.value-box}
-```{r label = PakConfirmed}
-```
-
-### Active {.value-box}
-```{r label = PakActive}
-```
-
-### Recovered {.value-box}
-```{r label = PakRecovered}
+```{r, child = c("08AJK.Rmd")}
 ```
 
 
-### Death {.value-box}
-```{r label = PakDeaths}
+```{r, child = c("09About.Rmd")}
 ```
-
-
-Row
-----------------------------------------------------------------------
-
-### Number of Recovered Cases
-```{r label = PakRecoveredPlot1}
-```
-
-
-### Number of Deaths
-```{r label = PakDeathsPlot1}
-```
-
-### Data for COVID-19
-```{r label = PakCoronaData1}
-```
-
-
-Punjab
-======================================================================
-
-Row
-----------------------------------------------------------------------
-  
-### Confirmed {.value-box}
-```{r label = PakConfirmed}
-```
-
-### Active {.value-box}
-```{r label = PakActive}
-```
-
-### Recovered {.value-box}
-```{r label = PakRecovered}
-```
-
-
-### Death {.value-box}
-```{r label = PakDeaths}
-```
-
-
-Row
-----------------------------------------------------------------------
-
-
-Sindh
-======================================================================
-
-Row
-----------------------------------------------------------------------
-  
-### Confirmed {.value-box}
-
-```{r label = PakConfirmed}
-```
-
-### Active {.value-box}
-
-```{r label = PakActive}
-```
-
-### Recovered {.value-box}
-
-```{r label = PakRecovered}
-```
-
-
-### Death {.value-box}
-
-```{r label = PakDeaths}
-```
-
-
-Row
-----------------------------------------------------------------------
-
-
-KPK
-======================================================================
-
-Row
-----------------------------------------------------------------------
-  
-### Confirmed {.value-box}
-
-```{r label = PakConfirmed}
-```
-
-### Active {.value-box}
-
-```{r label = PakActive}
-```
-
-### Recovered {.value-box}
-
-```{r label = PakRecovered}
-```
-
-
-### Death {.value-box}
-
-```{r label = PakDeaths}
-```
-
-
-Row
-----------------------------------------------------------------------
-
-
-
-Balochistan
-======================================================================
-
-Row
-----------------------------------------------------------------------
-  
-### Confirmed {.value-box}
-
-```{r label = PakConfirmed}
-```
-
-### Active {.value-box}
-
-```{r label = PakActive}
-```
-
-### Recovered {.value-box}
-
-```{r label = PakRecovered}
-```
-
-
-### Death {.value-box}
-
-```{r label = PakDeaths}
-```
-
-
-Row
-----------------------------------------------------------------------
-
-
-ICT
-======================================================================
-
-Row
-----------------------------------------------------------------------
-  
-### Confirmed {.value-box}
-
-```{r label = PakConfirmed}
-```
-
-### Active {.value-box}
-
-```{r label = PakActive}
-```
-
-### Recovered {.value-box}
-
-```{r label = PakRecovered}
-```
-
-
-### Death {.value-box}
-
-```{r label = PakDeaths}
-```
-
-
-Row
-----------------------------------------------------------------------
-
-
-
-Gilgit Baltistan
-======================================================================
-
-Row
-----------------------------------------------------------------------
-  
-### Confirmed {.value-box}
-
-```{r label = PakConfirmed}
-```
-
-### Active {.value-box}
-
-```{r label = PakActive}
-```
-
-### Recovered {.value-box}
-
-```{r label = PakRecovered}
-```
-
-
-### Death {.value-box}
-
-```{r label = PakDeaths}
-```
-
-
-Row
-----------------------------------------------------------------------
-
-
-AJK
-======================================================================
-
-Row
-----------------------------------------------------------------------
-  
-### Confirmed {.value-box}
-
-```{r label = PakConfirmed}
-```
-
-### Active {.value-box}
-
-```{r label = PakActive}
-```
-
-### Recovered {.value-box}
-
-```{r label = PakRecovered}
-```
-
-
-### Death {.value-box}
-
-```{r label = PakDeaths}
-```
-
-
-Row
-----------------------------------------------------------------------
-

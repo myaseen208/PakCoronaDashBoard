@@ -1,0 +1,106 @@
+---
+title: "Coronavirus"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+ #    vertical_layout: scroll
+  #  vertical_layout: fill
+---
+
+
+```{r label = Punjab, include = FALSE}
+knitr::read_chunk("02Punjab.R")
+```
+
+
+```{r label = PunjabPackages, include = FALSE}
+```
+
+```{r label = PunjabParameters}
+```
+
+
+```{r label = PunjabCoronaData}
+```
+
+Punjab
+======================================================================
+
+Row
+----------------------------------------------------------------------
+  
+### Confirmed {.value-box}
+```{r label = PunjabConfirmed}
+```
+
+### Active {.value-box}
+```{r label = PunjabActive}
+```
+
+### Recovered {.value-box}
+```{r label = PunjabRecovered}
+```
+
+
+### Death {.value-box}
+```{r label = PunjabDeaths}
+```
+
+
+Row
+----------------------------------------------------------------------
+
+### Cumulative Number of Confirmed Cases
+```{r label = PunjabConfirmedPlot1}
+```
+
+### Cumulative Number of Active Cases
+```{r label = PunjabActivePlot1}
+```
+
+
+### Number of New Cases
+```{r label = PunjabNewPlot1}
+```
+
+
+Punjab
+======================================================================
+
+Row
+----------------------------------------------------------------------
+  
+### Confirmed {.value-box}
+```{r label = PunjabConfirmed}
+```
+
+### Active {.value-box}
+```{r label = PunjabActive}
+```
+
+### Recovered {.value-box}
+```{r label = PunjabRecovered}
+```
+
+
+### Death {.value-box}
+```{r label = PunjabDeaths}
+```
+
+
+Row
+----------------------------------------------------------------------
+
+### Number of Recovered Cases
+```{r label = PunjabRecoveredPlot1}
+```
+
+
+### Number of Deaths
+```{r label = PunjabDeathsPlot1}
+```
+
+### Data for COVID-19
+```{r label = PunjabCoronaData1}
+```
+

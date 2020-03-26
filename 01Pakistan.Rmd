@@ -1,0 +1,106 @@
+---
+title: "Coronavirus"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+ #    vertical_layout: scroll
+  #  vertical_layout: fill
+---
+
+
+```{r label = Pakistan, include = FALSE}
+knitr::read_chunk("01Pakistan.R")
+```
+
+
+```{r label = PakistanPackages, include = FALSE}
+```
+
+```{r label = PakistanParameters}
+```
+
+
+```{r label = PakistanCoronaData}
+```
+
+Pakistan
+======================================================================
+
+Row
+----------------------------------------------------------------------
+  
+### Confirmed {.value-box}
+```{r label = PakistanConfirmed}
+```
+
+### Active {.value-box}
+```{r label = PakistanActive}
+```
+
+### Recovered {.value-box}
+```{r label = PakistanRecovered}
+```
+
+
+### Death {.value-box}
+```{r label = PakistanDeaths}
+```
+
+
+Row
+----------------------------------------------------------------------
+
+### Cumulative Number of Confirmed Cases
+```{r label = PakistanConfirmedPlot1}
+```
+
+### Cumulative Number of Active Cases
+```{r label = PakistanActivePlot1}
+```
+
+
+### Number of New Cases
+```{r label = PakistanNewPlot1}
+```
+
+
+Pakistan
+======================================================================
+
+Row
+----------------------------------------------------------------------
+  
+### Confirmed {.value-box}
+```{r label = PakistanConfirmed}
+```
+
+### Active {.value-box}
+```{r label = PakistanActive}
+```
+
+### Recovered {.value-box}
+```{r label = PakistanRecovered}
+```
+
+
+### Death {.value-box}
+```{r label = PakistanDeaths}
+```
+
+
+Row
+----------------------------------------------------------------------
+
+### Number of Recovered Cases
+```{r label = PakistanRecoveredPlot1}
+```
+
+
+### Number of Deaths
+```{r label = PakistanDeathsPlot1}
+```
+
+### Data for COVID-19
+```{r label = PakistanCoronaData1}
+```
+
