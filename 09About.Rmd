@@ -11,4 +11,4 @@ This dashboard provides an overview of the 2019 Novel Coronavirus COVID-19 (2019
 
 **Last Updated:**
 
-`r format(Sys.time(),  "%b %d, %Y at %X")`
+`r format(Sys.time(),  "%b %d, %Y at %X")` (Pakistan Standard Time)
