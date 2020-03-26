@@ -30,23 +30,19 @@ Row
 ----------------------------------------------------------------------
   
 ### Confirmed {.value-box}
-
 ```{r label = PakConfirmed}
 ```
 
 ### Active {.value-box}
-
 ```{r label = PakActive}
 ```
 
 ### Recovered {.value-box}
-
 ```{r label = PakRecovered}
 ```
 
 
 ### Death {.value-box}
-
 ```{r label = PakDeaths}
 ```
 
@@ -55,39 +51,56 @@ Row
 ----------------------------------------------------------------------
 
 ### Cumulative Number of Confirmed Cases
-
 ```{r label = PakConfirmedPlot1}
 ```
 
 ### Cumulative Number of Active Cases
-
 ```{r label = PakActivePlot1}
 ```
 
 
 ### Number of New Cases
-
 ```{r label = PakNewPlot1}
 ```
 
+
+Pakistan
+======================================================================
+
+Row
+----------------------------------------------------------------------
+  
+### Confirmed {.value-box}
+```{r label = PakConfirmed}
+```
+
+### Active {.value-box}
+```{r label = PakActive}
+```
+
+### Recovered {.value-box}
+```{r label = PakRecovered}
+```
+
+
+### Death {.value-box}
+```{r label = PakDeaths}
+```
 
 
 Row
 ----------------------------------------------------------------------
 
 ### Number of Recovered Cases
-
 ```{r label = PakRecoveredPlot1}
 ```
 
 
 ### Number of Deaths
-
 ```{r label = PakDeathsPlot1}
 ```
 
 ### Data for COVID-19
-
 ```{r label = PakCoronaData1}
 ```
 
@@ -99,23 +112,19 @@ Row
 ----------------------------------------------------------------------
   
 ### Confirmed {.value-box}
-
 ```{r label = PakConfirmed}
 ```
 
 ### Active {.value-box}
-
 ```{r label = PakActive}
 ```
 
 ### Recovered {.value-box}
-
 ```{r label = PakRecovered}
 ```
 
 
 ### Death {.value-box}
-
 ```{r label = PakDeaths}
 ```
 

@@ -1,6 +1,5 @@
 ##----Set-WD----
-library(here)
-here()
+setwd("/media/myaseen208/Documents/MYaseen208/Consultancy_at_UAF/Mr._M._Yaseen/2017-09-14RPackages/PakCoronaDashBoard/PakCoronaDashboard")
 
 ##----Packages----
 library(flexdashboard)
@@ -24,9 +23,64 @@ PakCoronaData <-
   mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
 
 
+##----PakCoronaData12----
+tb1 <-
+  PakCoronaData %>% 
+  pivot_longer(cols = Confirmed:NewCases, names_to = "Var", values_to = "Cases")
+  
+txtb1 <- highlight_key(tb1)
+
+widgetstb1 <- 
+  bscols(
+    widths = c(12, 12, 12)
+    #, filter_select("Var", "Var", txtb1, ~Var)
+    , filter_checkbox("Var", "Var", txtb1, ~Var, inline = TRUE)
+  )
+
+bscols(
+  widths = c(4, 8)
+  , widgetstb1
+  , plot_ly(txtb1, x = ~Date, y = ~Cases, showlegend = FALSE) %>%
+    add_lines(color = ~Var, colors = "black")
+)
+
+bscols(
+  widths = c(4, 8)
+  , widgetstb1
+  , ggplotly(Plot1) %>%
+    add_lines(color = ~Var, colors = "black")
+)
+
+ggplotly(Plot1)
+
+Plot1 <- 
+ ggplot(data = txtb1, mapping = aes(x = Date, y = Cases, color = Var)) +
+  geom_point() +
+  geom_line() +
+  scale_color_viridis_d() +
+  scale_x_date(date_labels = "%b %d", date_breaks = "day") +
+  scale_y_continuous(expand = c(0, 0),  breaks = scales::pretty_breaks(8)) +
+  labs( 
+    x = "Date"
+    , y = "Cases"
+  ) +
+  theme_igray() + 
+  scale_colour_tableau() +
+  theme(
+    plot.title      = element_text(hjust = 0.5)
+    , plot.subtitle   = element_text(hjust = 0.5)
+    , axis.text.x     = element_text(angle = 90, hjust = 0.95, vjust = 0.5, face = "bold")
+    , axis.text.y     = element_text(face = "bold")
+    , strip.text.x    = element_text(face = "bold")
+    , axis.title.x    = element_text(face = "bold")
+    , axis.title.y    = element_text(face = "bold")
+  )
+
+
 ##----PakConfirmed----
+# paste(format(tail(PakCoronaData$Confirmed, 1), big.mark = ","), " (",  format(Sys.time(),  "%b %d, %Y at %X"), ")", sep = "")
 valueBox(
-  value  = paste(format(tail(PakCoronaData$Confirmed, 1), big.mark = ","), "", sep = " ")
+    value   = format(tail(PakCoronaData$Confirmed, 1), big.mark = ",")
   , caption = "Total Confirmed Cases"
   , icon    = "fas fa-user-md"
   , color   = confirmed_color
@@ -35,7 +89,7 @@ valueBox(
 
 ##----PakActive----
 valueBox(
-  value = paste(format(tail(PakCoronaData$Active, 1), big.mark = ","), " (", round(100 * tail(PakCoronaData$Active, 1) / tail(PakCoronaData$Confirmed, 1), 1), "%)", sep = "")
+   value = paste(format(tail(PakCoronaData$Active, 1), big.mark = ","), " (", round(100 * tail(PakCoronaData$Active, 1) / tail(PakCoronaData$Confirmed, 1), 1), "%)", sep = "")
   , caption = "Active Cases"
   , icon    = "fas fa-ambulance"
   , color   = active_color
