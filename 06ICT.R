@@ -18,7 +18,7 @@ death_color     <- "red"
 
 ##----ICTCoronaData----
 ICTCoronaData <- 
-  readxl::read_xlsx("06ICT.xlsx") %>% 
+  readxl::read_xlsx("data/06ICT.xlsx") %>% 
   mutate(Date = as.Date(Date)) %>% 
   mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
 

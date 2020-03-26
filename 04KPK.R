@@ -18,7 +18,7 @@ death_color     <- "red"
 
 ##----KPKCoronaData----
 KPKCoronaData <- 
-  readxl::read_xlsx("04KPK.xlsx") %>% 
+  readxl::read_xlsx("data/04KPK.xlsx") %>% 
   mutate(Date = as.Date(Date)) %>% 
   mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
 

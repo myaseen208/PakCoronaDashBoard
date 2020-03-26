@@ -18,7 +18,7 @@ death_color     <- "red"
 
 ##----GBCoronaData----
 GBCoronaData <- 
-  readxl::read_xlsx("07GB.xlsx") %>% 
+  readxl::read_xlsx("data/07GB.xlsx") %>% 
   mutate(Date = as.Date(Date)) %>% 
   mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
 

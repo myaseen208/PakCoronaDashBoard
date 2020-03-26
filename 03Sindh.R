@@ -18,7 +18,7 @@ death_color     <- "red"
 
 ##----SindhCoronaData----
 SindhCoronaData <- 
-  readxl::read_xlsx("03Sindh.xlsx") %>% 
+  readxl::read_xlsx("data/03Sindh.xlsx") %>% 
   mutate(Date = as.Date(Date)) %>% 
   mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
 
