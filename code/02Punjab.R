@@ -2,12 +2,8 @@
 setwd("/media/myaseen208/Documents/MYaseen208/Consultancy_at_UAF/Mr._M._Yaseen/2017-09-14RPackages/PakCoronaDashBoard/PakCoronaDashboard")
 
 ##----PunjabPackages----
-library(flexdashboard)
-library(tidyverse)
-library(plotly)
-library(ggthemes)
-library(DT)
-
+source("code/0RPackages.R")
+source("code/0Themes.R")
 
 ##----PunjabParameters----
 confirmed_color <- "purple"
@@ -76,17 +72,8 @@ PunjabConfirmedPlot1 <-
     x = "Date"
     , y = "Confirmed Cases"
   ) +
-  theme_igray() + 
   scale_colour_tableau() +
-  theme(
-    plot.title      = element_text(hjust = 0.5)
-    , plot.subtitle   = element_text(hjust = 0.5)
-    , axis.text.x     = element_text(angle = 90, hjust = 0.95, vjust = 0.5, face = "bold")
-    , axis.text.y     = element_text(face = "bold")
-    , strip.text.x    = element_text(face = "bold")
-    , axis.title.x    = element_text(face = "bold")
-    , axis.title.y    = element_text(face = "bold")
-  )
+  myTheme1()
 
 # PunjabConfirmedPlot1
 ggplotly(PunjabConfirmedPlot1)
@@ -104,17 +91,8 @@ PunjabActivePlot1 <-
     x = "Date"
     , y = "Active Cases"
   ) +
-  theme_igray() + 
   scale_colour_tableau() +
-  theme(
-    plot.title      = element_text(hjust = 0.5)
-    , plot.subtitle   = element_text(hjust = 0.5)
-    , axis.text.x     = element_text(angle = 90, hjust = 0.95, vjust = 0.5, face = "bold")
-    , axis.text.y     = element_text(face = "bold")
-    , strip.text.x    = element_text(face = "bold")
-    , axis.title.x    = element_text(face = "bold")
-    , axis.title.y    = element_text(face = "bold")
-  )
+  myTheme1()
 
 # PunjabActivePlot1
 ggplotly(PunjabActivePlot1)
@@ -132,18 +110,8 @@ PunjabNewPlot1 <-
     x = "Date"
     , y = "New Cases"
   ) +
-  theme_igray() + 
   scale_colour_tableau() +
-  theme(
-    plot.title      = element_text(hjust = 0.5)
-    , plot.subtitle   = element_text(hjust = 0.5)
-    , axis.text.x     = element_text(angle = 90, hjust = 0.95, vjust = 0.5, face = "bold")
-    , axis.text.y     = element_text(face = "bold")
-    , strip.text.x    = element_text(face = "bold")
-    , axis.title.x    = element_text(face = "bold")
-    , axis.title.y    = element_text(face = "bold")
-    , plot.caption    = element_text(color = "green", face = "italic")
-  )
+  myTheme1()
 
 ggplotly(PunjabNewPlot1)
 
@@ -160,18 +128,8 @@ PunjabRecoveredPlot1 <-
     x = "Date"
     , y = "Recovered Cases"
   ) +
-  theme_igray() + 
   scale_colour_tableau() +
-  theme(
-    plot.title      = element_text(hjust = 0.5)
-    , plot.subtitle   = element_text(hjust = 0.5)
-    , axis.text.x     = element_text(angle = 90, hjust = 0.95, vjust = 0.5, face = "bold")
-    , axis.text.y     = element_text(face = "bold")
-    , strip.text.x    = element_text(face = "bold")
-    , axis.title.x    = element_text(face = "bold")
-    , axis.title.y    = element_text(face = "bold")
-    , plot.caption    = element_text(color = "green", face = "italic")
-  )
+  myTheme1()
 
 ggplotly(PunjabRecoveredPlot1)
 
@@ -187,18 +145,8 @@ PunjabDeathsPlot1 <-
     x = "Date"
     , y = "Noumber of Deaths"
   ) +
-  theme_igray() + 
   scale_colour_tableau() +
-  theme(
-    plot.title      = element_text(hjust = 0.5)
-    , plot.subtitle   = element_text(hjust = 0.5)
-    , axis.text.x     = element_text(angle = 90, hjust = 0.95, vjust = 0.5, face = "bold")
-    , axis.text.y     = element_text(face = "bold")
-    , strip.text.x    = element_text(face = "bold")
-    , axis.title.x    = element_text(face = "bold")
-    , axis.title.y    = element_text(face = "bold")
-    , plot.caption    = element_text(color = "green", face = "italic")
-  )
+  myTheme1()
 
 ggplotly(PunjabDeathsPlot1)
 

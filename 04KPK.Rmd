@@ -9,7 +9,7 @@ output:
 
 
 ```{r label = KPK, include = FALSE}
-knitr::read_chunk("04KPK.R")
+knitr::read_chunk("code/04KPK.R")
 ```
 
 

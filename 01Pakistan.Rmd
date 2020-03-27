@@ -9,7 +9,7 @@ output:
 
 
 ```{r label = Pakistan, include = FALSE}
-knitr::read_chunk("01Pakistan.R")
+knitr::read_chunk("code/01Pakistan.R")
 ```
 
 

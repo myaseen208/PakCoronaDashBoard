@@ -9,7 +9,7 @@ output:
 
 
 ```{r label = GB, include = FALSE}
-knitr::read_chunk("07GB.R")
+knitr::read_chunk("code/07GB.R")
 ```
 
 
