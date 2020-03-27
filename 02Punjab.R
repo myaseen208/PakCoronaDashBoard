@@ -18,7 +18,7 @@ death_color     <- "red"
 
 ##----PunjabCoronaData----
 PunjabCoronaData <- 
-  readxl::read_xlsx("data/02Punjab.xlsx") %>% 
+  readr::read_csv("data/02Punjab.csv") %>% 
   mutate(Date = as.Date(Date)) %>% 
   mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
 

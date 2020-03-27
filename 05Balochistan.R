@@ -18,7 +18,7 @@ death_color     <- "red"
 
 ##----BalochistanCoronaData----
 BalochistanCoronaData <- 
-  readxl::read_xlsx("data/05Balochistan.xlsx") %>% 
+  readr::read_csv("data/05Balochistan.csv") %>% 
   mutate(Date = as.Date(Date)) %>% 
   mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
 

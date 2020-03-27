@@ -17,8 +17,8 @@ death_color     <- "red"
 
 
 ##----AJKCoronaData----
-AJKCoronaData <- 
-  readxl::read_xlsx("data/08AJK.xlsx") %>% 
+AJKCoronaData <-
+  readr::read_csv("data/08AJK.csv") %>%
   mutate(Date = as.Date(Date)) %>% 
   mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
 
