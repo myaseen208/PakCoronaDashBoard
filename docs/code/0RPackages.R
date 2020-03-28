@@ -4,6 +4,7 @@
 Packages <- 
     c(
         "flexdashboard"
+      , "tidytable"
       , "tidyverse"
       , "ggthemes"
       , "plotly"

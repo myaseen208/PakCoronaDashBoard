@@ -13,10 +13,12 @@ death_color     <- "red"
 
 
 ##----BalochistanCoronaData----
+load("data/PakCoronaData.RData")
+
 BalochistanCoronaData <- 
-  readr::read_csv("data/05Balochistan.csv") %>% 
-  mutate(Date = as.Date(Date)) %>% 
-  mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
+  PakCoronaData %>%
+  dt_filter(Region == "Balochistan") %>% 
+  dt_mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
 
 
 ##----BalochistanConfirmed----

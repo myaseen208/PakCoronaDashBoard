@@ -13,10 +13,12 @@ death_color     <- "red"
 
 
 ##----ICTCoronaData----
+load("data/PakCoronaData.RData")
+
 ICTCoronaData <- 
-  readr::read_csv("data/06ICT.csv") %>%
-  mutate(Date = as.Date(Date)) %>% 
-  mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
+  PakCoronaData %>%
+  dt_filter(Region == "ICT") %>% 
+  dt_mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
 
 
 ##----ICTConfirmed----

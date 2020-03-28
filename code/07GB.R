@@ -13,10 +13,12 @@ death_color     <- "red"
 
 
 ##----GBCoronaData----
-GBCoronaData <-
-  readr::read_csv("data/07GB.csv") %>%
-  mutate(Date = as.Date(Date)) %>% 
-  mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
+load("data/PakCoronaData.RData")
+
+GBCoronaData <- 
+  PakCoronaData %>%
+  dt_filter(Region == "GB") %>% 
+  dt_mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
 
 
 ##----GBConfirmed----

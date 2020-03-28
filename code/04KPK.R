@@ -13,10 +13,12 @@ death_color     <- "red"
 
 
 ##----KPKCoronaData----
+load("data/PakCoronaData.RData")
+
 KPKCoronaData <- 
-  readr::read_csv("data/04KPK.csv") %>% 
-  mutate(Date = as.Date(Date)) %>% 
-  mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
+  PakCoronaData %>%
+  dt_filter(Region == "KPK") %>% 
+  dt_mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
 
 
 ##----KPKConfirmed----

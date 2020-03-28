@@ -13,10 +13,12 @@ death_color     <- "red"
 
 
 ##----PunjabCoronaData----
+load("data/PakCoronaData.RData")
+
 PunjabCoronaData <- 
-  readr::read_csv("data/02Punjab.csv") %>% 
-  mutate(Date = as.Date(Date)) %>% 
-  mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
+  PakCoronaData %>%
+  dt_filter(Region == "Punjab") %>% 
+  dt_mutate(NewCases = Confirmed - lag(Confirmed, default = 0)) 
 
 
 ##----PunjabConfirmed----
