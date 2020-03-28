@@ -2,8 +2,9 @@
 setwd("/media/myaseen208/Documents/MYaseen208/Consultancy_at_UAF/Mr._M._Yaseen/2017-09-14RPackages/PakCoronaDashBoard/PakCoronaDashboard")
 
 ##----ICTPackages----
-source("code/0RPackages.R")
-source("code/0Themes.R")
+source("R/0RPackages.R")
+source("R/0Themes.R")
+
 
 ##----ICTParameters----
 confirmed_color <- "purple"
