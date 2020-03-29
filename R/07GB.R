@@ -14,8 +14,6 @@ death_color     <- "red"
 
 
 ##----GBCoronaData----
-load("data/PakCoronaData.RData")
-
 GBCoronaData <- 
   PakCoronaData %>%
   dt_filter(Region == "GB") %>% 

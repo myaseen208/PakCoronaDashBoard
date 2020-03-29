@@ -14,8 +14,6 @@ death_color     <- "red"
 
 
 ##----SindhCoronaData----
-load("data/PakCoronaData.RData")
-
 SindhCoronaData <- 
   PakCoronaData %>%
   dt_filter(Region == "Sindh") %>% 
