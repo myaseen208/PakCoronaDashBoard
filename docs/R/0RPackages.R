@@ -18,9 +18,9 @@ pacman::p_load(Packages, character.only = TRUE)
 # pacman::p_up(update = TRUE, ask = FALSE)
 
 
-if (!require("PakCoronaData")){
+# if (!require("PakCoronaData")){
   remotes::install_github("myaseen208/PakCoronaData")
-  } 
+#  } 
 
 library(PakCoronaData)
 ##------------------------------------------------------------------------------
